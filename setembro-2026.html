@@ -79,7 +79,7 @@
     display: flex; align-items: center; gap: 8px;
   }
     .period-pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); }
-  .period-pill { position: relative; cursor: pointer; user-select: none; }
+  .period-pill { position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
   .period-pill:hover { background: rgba(255,255,255,0.16); }
   .period-pill .pill-chevron { font-size: .65rem; margin-left: 2px; transition: transform .15s ease; }
   .period-pill.open .pill-chevron { transform: rotate(180deg); }
@@ -103,6 +103,8 @@
     font-weight: 600;
     border-bottom: 1px solid var(--line);
     font-family: 'Inter', sans-serif;
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
   .period-menu-item:last-child { border-bottom: none; }
   .period-menu-item:hover { background: #F7F7FC; }
